@@ -223,3 +223,15 @@
     transform: rotate(360deg);
   }
 }
+
+.earth-swap::before {
+  content: "🌏";
+  font-size: 64px;
+  animation: earth-swap 0.9s steps(1) infinite;
+}
+
+@keyframes earth-swap {
+  0%   { content: "🌏"; }
+  50%  { content: "🌍"; }
+  100% { content: "🌏"; }
+}

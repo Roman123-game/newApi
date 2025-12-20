@@ -1,0 +1,19 @@
+.earth-container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.earth-symbol {
+  position: absolute;
+  top: 0;
+  left: -100%; /* start off to the left */
+  font-size: 64px;
+  transition: left 0.4s ease;
+}
+
+.earth-symbol.active {
+  left: 0; /* slide into view */
+}

@@ -5,6 +5,7 @@ import "./App.css";
 import React, { useMemo, useState, useEffect, useCallback } from "react";
 import Map from "./components/Map/Map";
 import SelectLanguage from "./components/Select/SelectLanguage";
+import Earth from "./components/Earth/Earth";
 
 type EffectCallback = () => (void | any);
 
@@ -155,6 +156,9 @@ const App: React.FC = () => {
         className="lorem">
         famous people quotes translated
       </h3>
+
+
+  <Earth />
 
 
       <Map position={language} />
